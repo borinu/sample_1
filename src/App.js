@@ -1,5 +1,11 @@
 import "./styles.css";
+import "./login.css";
+import { Login } from "./pages/Login";
 
 export default function App() {
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <Login />
+    </div>
+  );
 }
