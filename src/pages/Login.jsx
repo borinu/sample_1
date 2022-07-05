@@ -1,5 +1,6 @@
-import "../styles.css";
-import "../login.scss";
+import "../scss/button.scss";
+import "../scss/styles.scss";
+import "../scss/login.scss";
 import { Link } from "react-router-dom";
 
 export const Login = () => {

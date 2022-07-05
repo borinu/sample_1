@@ -1,5 +1,6 @@
-import "../styles.css";
-import "../table.scss";
+import "../scss/styles.scss";
+import "../scss/button.scss";
+import "../scss/table.scss";
 import { Link } from "react-router-dom";
 
 export const Detail = () => {

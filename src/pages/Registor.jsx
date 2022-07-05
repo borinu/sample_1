@@ -1,5 +1,6 @@
-import "../styles.css";
-import "../editInputStyle.scss";
+import "../scss/styles.scss";
+import "../scss/button.scss";
+import "../scss/editInputStyle.scss";
 import { Link } from "react-router-dom";
 
 export const Registor = () => {
