@@ -1,0 +1,36 @@
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  box-shadow: 0px 0px 15px -5px #777777;
+
+  &.lineTable {
+    th {
+      width: 10%;
+    }
+    td {
+      padding: 15px 20px;
+    }
+  }
+
+  tr {
+    border-bottom: solid 1px #eee;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #d4f0fd;
+    }
+
+    th {
+      background-color: #66cdaa;
+    }
+    th, td {
+      text-align: center;
+      width: 25%;
+      padding: 15px 0;
+    }
+  }
+}
+.button {
+  margin-top: 30px;
+}

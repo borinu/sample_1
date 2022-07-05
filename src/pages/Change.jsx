@@ -1,5 +1,5 @@
 import "../styles.css";
-import "../change.scss";
+import "../editInputStyle.scss";
 import { Link } from "react-router-dom";
 
 export const Change = () => {
@@ -7,7 +7,7 @@ export const Change = () => {
     <>
       <h1>社員情報変更</h1>
       <form action="" method="post">
-        <table>
+        <table className="lineTable">
           <tbody>
             <tr>
               <th>氏名</th>
@@ -22,7 +22,7 @@ export const Change = () => {
             <tr>
               <th>性別</th>
               <td className="radioWrap">
-                <label for="woman" className="radioLabel">
+                <label htmlFor="woman" className="radioLabel">
                   <input
                     checked
                     type="radio"
@@ -30,17 +30,11 @@ export const Change = () => {
                     class="radio"
                     name="gender"
                   />
-                  <span class="labelCheck round">男性</span>
-                </label>
-                <label for="man" className="radioLabel">
-                  <input
-                    checked
-                    type="radio"
-                    id="man"
-                    class="radio"
-                    name="gender"
-                  />
                   <span class="labelCheck round">女性</span>
+                </label>
+                <label htmlFor="man" className="radioLabel">
+                  <input type="radio" id="man" class="radio" name="gender" />
+                  <span class="labelCheck round">男性</span>
                 </label>
               </td>
             </tr>
@@ -57,7 +51,7 @@ export const Change = () => {
             <tr>
               <th>部署</th>
               <td className="radioWrap">
-                <label for="soumu" className="radioLabel">
+                <label htmlFor="soumu" className="radioLabel">
                   <input
                     checked
                     type="radio"
@@ -67,9 +61,8 @@ export const Change = () => {
                   />
                   <span class="labelCheck round">総務</span>
                 </label>
-                <label for="eigyou" className="radioLabel">
+                <label htmlFor="eigyou" className="radioLabel">
                   <input
-                    checked
                     type="radio"
                     id="eigyou"
                     class="radio"
@@ -77,9 +70,8 @@ export const Change = () => {
                   />
                   <span class="labelCheck round">営業</span>
                 </label>
-                <label for="engineer" className="radioLabel">
+                <label htmlFor="engineer" className="radioLabel">
                   <input
-                    checked
                     type="radio"
                     id="engineer"
                     class="radio"

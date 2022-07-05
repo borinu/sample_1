@@ -1,12 +1,12 @@
 import "../styles.css";
-import "../registor.css";
+import "../editInputStyle.scss";
 import { Link } from "react-router-dom";
 
 export const Registor = () => {
   return (
     <>
       <h1>社員情報登録</h1>
-      <table>
+      <table className="lineTable">
         <tbody>
           <tr>
             <th>氏名</th>

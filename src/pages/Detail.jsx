@@ -1,12 +1,12 @@
 import "../styles.css";
-import "../detail.css";
+import "../table.scss";
 import { Link } from "react-router-dom";
 
 export const Detail = () => {
   return (
     <>
       <h1>社員情報詳細</h1>
-      <table>
+      <table className="lineTable">
         <tbody>
           <tr>
             <th>氏名</th>
@@ -32,8 +32,6 @@ export const Detail = () => {
           <Link to="/change">変更</Link>
         </p>
       </div>
-
-      {/* <Button text="新規登録" /> */}
     </>
   );
 };
