@@ -1,3 +1,6 @@
+import "../styles.css";
+import { Link } from "react-router-dom";
+
 export const Login = () => {
   return (
     <>
@@ -14,7 +17,9 @@ export const Login = () => {
           </div>
           <div className="inputWrap">
             <label htmlFor="sbmit"></label>
-            <input type="submit" name="sbmit" value="ログイン" />
+            <Link to="/List">
+              <input type="submit" name="sbmit" value="ログイン" />
+            </Link>
           </div>
         </div>
       </form>
