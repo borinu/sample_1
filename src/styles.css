@@ -9,10 +9,52 @@ a {
   color: #ffffff;
   text-decoration: none;
 }
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: none;
+  font: inherit;
+}
+.radio-label {
+  position: relative;
+  min-width: 10%;
+  margin: 10px;
+}
+.label-check {
+  position: relative;
+  display: block;
+  padding-left: 35px;
+  cursor: pointer;
+}
+.label-check::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  margin: auto;
+  width: 24px;
+  height: 24px;
+}
+.label-check.round::before {
+  border: 1px solid #ddd;
+  border-radius: 50%;
+}
+.label-check.check::before {
+  border: 1px solid #ddd;
+}
+
 .buttonWrap {
   display: flex;
   justify-content: center;
   margin-top: 30px;
+}
+.editLine {
+  width: 100%;
+  outline: none;
 }
 .button {
   display: block;

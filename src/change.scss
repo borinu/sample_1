@@ -1,0 +1,97 @@
+table td {
+  // padding: 15px 20px;
+}
+
+.radioWrap {
+  width: 100%;
+  display: flex;
+
+}
+
+.radioLabel {
+  position: relative;
+  min-width: 10%;
+  &+.radioLabel {
+    margin-left: 20px;
+  } 
+
+  .labelCheck {
+    position: relative;
+    display: block;
+    padding-left: 35px;
+    cursor: pointer;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      display: block;
+      margin: auto;
+      width: 24px;
+      height: 24px;
+    }
+    &.round {
+      &:before {
+        border: 1px solid #ddd;
+        border-radius: 50%;        
+      }
+    }
+    &.square {
+      &:before {
+        border: 1px solid #ddd;
+        transform: rotate(45deg);
+      }
+    }
+    &.check {
+      &:before {
+        border: 1px solid #ddd;
+      }
+    }
+  }
+
+  input[type="radio"].radio {
+    display: none;
+
+    &:checked {
+      + .labelCheck {
+        &:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 5px;
+          display: block;
+          margin: auto;
+        }
+        &.round {
+          &:after {
+            width: 16px;
+            height: 16px;
+            background-color: #4abdac;
+            border-radius: 50%;
+          }
+        }
+        &.square {
+          &:after {
+            width: 16px;
+            height: 16px;
+            background-color: #4abdac;
+            transform: rotate(45deg);
+          }
+        }
+        &.check {
+          &:after {
+            top: -10px;
+            width: 16px;
+            height: 24px;
+            border-bottom: 5px solid #4abdac;
+            border-right: 4px solid #4abdac;
+            transform: rotate(45deg);
+          }
+        }
+      }
+    }
+  }
+}

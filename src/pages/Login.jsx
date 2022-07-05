@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export const Login = () => {
   return (
     <>
-      <form className="loginForm">
+      <form className="loginForm" action="" method="post">
         <h1>ログイン</h1>
         <div>
           <div className="inputWrap">

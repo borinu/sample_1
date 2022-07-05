@@ -28,7 +28,7 @@ export const Registor = () => {
       </table>
       <div className="buttonWrap">
         <p className="button">
-          <Link to="/change">更新</Link>
+          <Link to="/List">登録</Link>
         </p>
       </div>
     </>
