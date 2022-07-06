@@ -28,7 +28,9 @@ export const Detail = () => {
         </tbody>
       </table>
       <div className="buttonWrap">
-        <p className="button">削除</p>
+        <p className="button">
+          <Link to="/list">削除</Link>
+        </p>
         <p className="button">
           <Link to="/change">変更</Link>
         </p>

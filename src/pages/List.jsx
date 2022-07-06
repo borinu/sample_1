@@ -40,9 +40,11 @@ export const List = () => {
           </tr>
         </tbody>
       </table>
-      <p className="button">
-        <Link to="/registor">新規登録</Link>
-      </p>
+      <div className="buttonWrap">
+        <p className="button">
+          <Link to="/registor">新規登録</Link>
+        </p>
+      </div>
       {/* <Button text="新規登録" /> */}
     </>
   );
